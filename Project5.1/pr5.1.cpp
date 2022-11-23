@@ -1,21 +1,20 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
-double f(const double a);
+int sum(int x, int y)
+{
+	return x + y;
+}
 int main()
 {
-	double x, y;
-	cout << "x = "; cin >> x;
-	cout << "y = "; cin >> y;
-	double c = (f(3) + f(x + 1) + 1) / (1 - f(y + 1) * f(y + 1));
+	int a, b;
+	cout << "a = ? "; cin >> a;
+	cout << "b = ? "; cin >> b;
+	int c = sum(a, b);
 	cout << "c = " << c << endl;
+	system("pause");
 	return 0;
 }
-double f(const double a)
-{
-	return ((a * a + 1) / sin(a + 1) * sin(a + 1));
 
-}
 
 
 
